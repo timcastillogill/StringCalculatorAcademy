@@ -17,5 +17,16 @@ class StringCalculatorTest {
 		assertEquals(1, StringCalculator.Add("1"));
 	}
 
+	@Test
+	public void
+	given_one_number_of_the_number_two() {
+		assertEquals(2, StringCalculator.Add("2"));
+	}
+
+	@Test
+	public void
+	given_one_number_of_the_number_three() {
+		assertEquals(3, StringCalculator.Add("3"));
+	}
 
 }
