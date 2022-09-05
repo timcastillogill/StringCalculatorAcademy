@@ -29,4 +29,10 @@ class StringCalculatorTest {
 		assertEquals(3, StringCalculator.Add("3"));
 	}
 
+	@Test
+	public void
+	given_two_numbers_of_1_and_2() {
+		assertEquals(3, StringCalculator.Add("1,2"));
+	}
+
 }
