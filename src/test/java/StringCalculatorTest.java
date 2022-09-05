@@ -72,4 +72,9 @@ class StringCalculatorTest {
 		assertEquals(5, StringCalculator.Add("2\n3"));
 	}
 
+	@Test
+	public void
+	given_custom_separator_return_total_of_arbitrary_size() {
+		assertEquals(3, StringCalculator.Add("//;\n1;2"));
+	}
 }
