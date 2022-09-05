@@ -2,22 +2,16 @@ import java.lang.reflect.Array;
 
 public class StringCalculator {
     public static int Add(String numbers) {
-        if (numbers.equals("")) {
-            return 0;
+        int result = 0;
+        String[] numbersArray = numbers.split(",");
+        int i = 0;
+        if (numbers.length() < 1) {
+            return result;
         }
-
-        if (numbers.equals("4,3,5")) {
-            return 12;
+        for (String number : numbersArray) {
+            result += Integer.parseInt(numbersArray[i]);
+            i++;
         }
-
-        if (numbers.equals("2,2,2")) {
-            return 6;
-        }
-
-        if (numbers.length() > 1) {
-            String[] numbersArray = numbers.split(",");
-            return Integer.parseInt(numbersArray[0]) + Integer.parseInt(numbersArray[1]);
-        }
-        return Integer.parseInt(numbers);
+        return result;
     }
 }
